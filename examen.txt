@@ -1,0 +1,8 @@
+Teoría (1h):
+    - Test
+
+Lab (3h):
+    - Pruebas unitarias
+    - Pruebas caja negra
+    - Pruebas caja blanca
+    - Ejercicio de requisitos

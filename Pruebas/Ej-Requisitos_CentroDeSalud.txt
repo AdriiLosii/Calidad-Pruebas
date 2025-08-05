@@ -1,0 +1,84 @@
+problema/proyecto
+--
+digitalizaicon sala de espera
+(eliminar a la enfermera que cooridna y sustiturla por una pantalla)
+
+- exploramos el sistema actual y comapra con lo que quieren
+
+flujo: el usuario pide cita previa para su médico, obtiene una dia y una hora (una franja temoral: 15m/5pm); a ese dia y a esa hora va a la sala de espera...
+
+... actualmente una enfermera le toma nota y lo manda esperar; el médico consulta con la enfermera regularmente para saber quién es el siguiente; cuando te toca, vas
+
+... se busca que el usuario saque un ticket con número y espere hasta que ese número aparezca en un monitor; cuando lo ve, entra
+
+- extraer requisitos
+
+- identificar a los ususarios del sistema
+
+PACIENTE
+    - contactar con el centro para hace runa RESERVAS
+        * alguien tiene que estar atendieno al teléfono
+            + limitamos el servicio a horario de oficina
+            + atienden varios ADMINISTRATIVOS
+        * el teléfono debe estar funcionando (momentos de saturación)
+    - identificarse ante gran-hermano
+        * el identificador está apagado o fuera de servicio
+            + los tickets los sacan los ADMINISTRATIVOS a la entrada
+                lo que significa que sus ordenadores podrán simular
+                el sistema de tickets de una sala concreta
+        * el PACIENTE intenta identificarse varias veces
+            + avisa de que ya está identificado y le recuerda el número
+        * el PACIENTE se identifica, pero no entra a tiempo
+            + se le sigue llamando automáticamente durante un tiempo
+        - tarjeta sergas
+            * no funciona el lector
+            * no trae la tarjeta
+        - nif (teclado/pantalla táctil)
+
+    - sacar un ticket/número
+        - impreso
+        - pantalla
+    - en la sala de esperar, revisar monitores hasta que aparezca el número
+        * todos los monitores apagados
+            + ¡error fatal! hay que avisar y pasa a revisión
+                y es el MÉDICO que tiene que salir del despacho a gritar los números
+        - aparece número, despacho
+        - varios monitores con la misma info
+            * algún monitor apagado
+                + la info está en otros monitores
+                + se le avisa con zumbido
+        - aparece el número actual y los anteriores no atendidos
+        - si se llega al límite, desaparece un número no atendidos
+            * ¡de repente aparece la persona!
+                + ha perdido la cita; tiene que volver a empezar
+    - con el MÉDICO... cosas privadas
+        * el PACIENTE puede despirtarse
+            + entra en cola de espera, se sigue llamando
+                automáticamente durante un tiempo...
+
+ADMINISTRATIVO
+    - atender al teléfono las peticiones de reservas
+        - identificar el MÉDICO del PACIENTE
+        - buscar disponibilidad del MÉDICO
+        - negociar día y hora con el PACIENTE
+    - atender presencialmente las peticiones de reserva de consulta
+        - ...
+
+MÉDICO
+    - avisa a la ENFERMRA para que entre un nuevo PACIENTE
+    - si no hay PACIENTE,
+        él no hace nada, y es la ENFERMERA quien lo avisa cuando llegue uno
+    - si hay PACIENTE,
+        lo atiende en el mínimo tiempo posible
+        vuelta a empezar
+
+ENFERMERA
+    - registra cada PACIENTE que entra
+    - cuando el MÉDICO le pido uno nuevo, prioriza, elige y manda un PACIENTE
+
+TÉCNICO HARDWARE
+GESTOR CENTRO
+
+
+- identificar sus necesidades
+- identificar sus limitaciones

@@ -1,0 +1,13 @@
+
+
+
+NUMERO = 1
+OPERACION = 2
+A_PART = 3
+C_PART = 4
+
+SUMA = 10
+REST = 20
+MULT = 30
+DIVS = 40
+

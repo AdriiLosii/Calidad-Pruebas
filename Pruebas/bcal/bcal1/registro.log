@@ -1,0 +1,14 @@
+[INFO] 1729806857.520844 cmd check
+[INFO] 1729806857.520871 no pedir pin para lectura por principio
+[INFO] 1729806860.568304 acceder a 'http://localhost:8000/test1.json'
+[INFO] 1729806883.205526 acceder a 'http://localhost:8000/test1.json'
+[INFO] 1729806883.25838 acceder a 'http://localhost:8000/test2.json'
+[INFO] 1729806883.262378 cmd codes
+[INFO] 1729806883.262392 no pedir pin para lectura por principio
+[INFO] 1729806883.2628422 cmd add
+[INFO] 1729806883.262856 pedir pin para escritura
+[INFO] 1729806885.317842 pin correcto
+[INFO] 1729806885.3243678 cmd add
+[INFO] 1729806885.32439 no pedir pin para escritura porque se recuerda
+[INFO] 1729806885.325932 cmd add
+[INFO] 1729806885.325949 no pedir pin para escritura porque se recuerda

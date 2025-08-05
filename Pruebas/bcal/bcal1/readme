@@ -1,0 +1,4 @@
+almacén local: sqlite3
+almacén remote: json vía http
+auth: pin (almacén local)
+sistema de registro: fichero
